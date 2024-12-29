@@ -1,5 +1,5 @@
 import { Color } from "../random-color/color";
-import Accordion from "./accordion/Accordion";
+import Accordion from "../accordion/Accordion";
 
 function App() {
   return (
