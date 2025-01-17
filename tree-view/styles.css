@@ -1,0 +1,98 @@
+/* General Styles */
+.tree-view-container {
+    width: 320px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.menu-list-container {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for each menu item */
+.menu-item:hover {
+    background-color: #e8f4fd;
+    transform: translateX(5px);
+}
+
+/* Label text for menu items */
+.menu-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Style for the toggle icon (expand/collapse) */
+.toggle-icon {
+    cursor: pointer;
+    font-size: 18px;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+/* Change icon color on hover */
+.toggle-icon:hover {
+    color: #0056b3;
+}
+
+/* Nested menu items */
+.menu-list-container ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* Indentation for nested items */
+.menu-list-container li {
+    margin-left: 15px;
+}
+
+/* Style for expanded nested items */
+.menu-list-container li>.menu-item {
+    background-color: #f7faff;
+    margin-left: 20px;
+}
+
+/* Icon size and color adjustment */
+.menu-item p {
+    font-size: 15px;
+    color: #555;
+}
+
+.menu-item p:hover {
+    color: #007BFF;
+}
+
+/* Adding a subtle animation when expanding/collapsing */
+.menu-list-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade in effect for the menu list */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
